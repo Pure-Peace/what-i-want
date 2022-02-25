@@ -226,7 +226,7 @@ macro_rules! unwrap_or_false {
 /// ```
 macro_rules! unwrap_or_true {
     ($exp: expr) => {
-        unwrap_or_do!($exp, return false)
+        unwrap_or_do!($exp, return true)
     };
 }
 
